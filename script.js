@@ -82,6 +82,9 @@ const clearAll = () => {
 }
 
 const inputDecimal = (dot) => {
+    if(currentNumber.includes(".")){
+        return
+    }
     currentNumber += dot;
     calValue += dot;
 }
